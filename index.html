@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная Таблица Менделеева</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Таблица Менделеева</h1>
+            <input type="text" id="search" placeholder="Поиск элемента..." />
+            <div class="filters">
+                <select id="group-filter">
+                    <option value="all">Все группы</option>
+                </select>
+                <select id="period-filter">
+                    <option value="all">Все периоды</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <div id="periodic-table"></div>
+        </main>
+        <footer>
+            <p>Авторы проэкта: Петрунин Никита, Куатов Арсен, Кенжибаев Жансеит, Терехов Матвей.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
