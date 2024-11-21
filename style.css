@@ -7,12 +7,15 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f9;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    max-width: 100%; /* Обеспечиваем, что контейнер будет на всю ширину окна */
+    overflow-x: auto; /* Добавляет горизонтальную прокрутку, если нужно */
 }
 
 header {
@@ -38,6 +41,10 @@ input, select {
     grid-template-columns: repeat(18, 1fr);
     gap: 5px;
     margin-top: 20px;
+    width: 100%; /* Убедитесь, что таблица не выходит за пределы контейнера */
+    max-width: 100%; /* Максимальная ширина таблицы */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    justify-items: center; /* Центрирование элементов в каждой ячейке */
 }
 
 .element {
@@ -48,6 +55,7 @@ input, select {
     text-align: center;
     padding: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 70%; /* Устанавливаем ширину 100% для каждого элемента */
 }
 
 .element:hover {
